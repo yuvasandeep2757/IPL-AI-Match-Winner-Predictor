@@ -36,7 +36,7 @@ function App() {
     setPrediction(null);
 
     try {
-      const response = await fetch('https://yuvasandeep1934.pythonanywhere.com/', {
+      const response = await fetch('https://yuvasandeep1934.pythonanywhere.com/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ team1, team2, toss_winner: tossWinner, venue })
